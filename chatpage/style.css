@@ -127,3 +127,31 @@ body {
     width: 29px;
     overflow: hidden;   
 }
+
+#input{
+    height: 370px;
+}
+
+#input-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#input-field{
+    margin-bottom: 5em;
+    position: absolute;
+    bottom: 0;
+    background-color: #1f1f20;
+    border-radius: 32px;
+    height: 5em;
+    width: 864px;
+    border: none; 
+}
+
+#input-field::placeholder{
+    color: #808080;
+    font-size: 1.2em;
+    padding: 1.6em;
+}
