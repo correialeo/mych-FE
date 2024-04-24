@@ -11,6 +11,12 @@ body {
     font-family: 'Poppins';
 }
 
+a:link{
+    text-decoration: none;
+    color: #9e9e9e;
+}
+
+
 #header {
     display: flex;
     justify-content: space-between;
