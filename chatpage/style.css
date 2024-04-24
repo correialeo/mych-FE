@@ -11,14 +11,12 @@ body {
     font-family: 'Poppins';
 }
 
-a:link {
+
+a:link{
     text-decoration: none;
-    
-   }
-   
-   a:hover {
-    color: #737474;
-   }
+    color: #9e9e9e;
+}
+
 
 #header {
     display: flex;
