@@ -30,9 +30,10 @@ body{
     padding: 0;
   }
   
-#navegacao a {
+#navegacao li {
     display: inline-block;
     margin: 0 2em;
+    margin-top: 10px;
 }
   
 #navegacao a {
@@ -96,9 +97,13 @@ body{
     margin-top: 40px;       
 }
 
+#img-participantes img{
+    width: 200px;
+}
+
 #felipe{
     justify-content: center;
-    margin-left: 340px;
+    margin-left: 335px;
 }
 
 #leandro{
@@ -135,4 +140,10 @@ body{
 
 #text-nav{
     align-items: center;
+
+}
+
+#links-git li{
+    display: inline-block;
+    margin-bottom: 10px;
 }
