@@ -23,7 +23,7 @@ html ::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     background-color: #000000;
-    
+
 }
 
 #cab-nav ul {
@@ -293,8 +293,56 @@ html ::-webkit-scrollbar {
 #rodape{
     font-family: 'Montserrat';
     font-size: 20px;
+    font-weight: 300;
     text-align: center;
-    font-weight: lighter;
     margin-bottom: 10px;
+    color: #666;
+    background-color: #fbfbfd;
+}
+
+#barra-nav{
+    background-color: #fbfbfd;
+}
+
+#foot-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+
+#foot-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+#foot-nav li {
+    display: inline-block;
+    margin: 0 1em;
+}
+  
+#foot-nav li a {
+    text-decoration: none;
+    color: #666;
+    
+}
+
+.foot-itens{
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 400;
+    color: #cacaca;
+}
+
+
+#logo-footer{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+  
+#foot-nav li a img {
+    vertical-align: middle;
 }
