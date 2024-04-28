@@ -32,7 +32,6 @@ a:link{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 3.5em;
     
 }
 
@@ -135,7 +134,8 @@ a:link{
 }
 
 #input{
-    height: 370px;
+    display: flex;
+    flex-direction: column;
 }
 
 #input-area{
@@ -146,8 +146,7 @@ a:link{
 }
 
 #input-field{
-    margin-bottom: 5em;
-    position: absolute;
+    margin-top: 5em;
     bottom: 0;
     background-color: #1f1f20;
     border-radius: 32px;
@@ -161,3 +160,14 @@ a:link{
     font-size: 1.2em;
     padding: 1.6em;
 }
+
+#input-warning{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#input-warning p{
+    color: #fff;
+}
+
