@@ -31,6 +31,10 @@ html ::-webkit-scrollbar {
 
 }
 
+#cabecalho img {
+    width: 3rem;
+}
+
 .cab-nav ul {
     list-style: none;
     margin: 0;
@@ -40,7 +44,7 @@ html ::-webkit-scrollbar {
   
 .cab-nav li {
     display: inline-block;
-    margin: 0 2em;
+    margin: 0.5rem 2em;
 }
   
 .cab-nav li a {
@@ -53,11 +57,12 @@ html ::-webkit-scrollbar {
     font-family: 'Poppins';
     font-size: 15px;
     font-weight: 400;
-    color: #ffffff;
+    color: #f1f1f1;
 }
-  
-.cab-nav li a img {
-    vertical-align: middle;
+
+.cab-nav li a p:hover{
+    color: #fff;
+    transition: 0.8s;
 }
   
 #home-page{
@@ -220,55 +225,6 @@ select {
 
 #map-workshops{
     margin-top: 1.5rem;
-}
-
-#celular{
-    width: 100%;
-    height: 700px;
-    background-color: #fbfbfd;
-    margin-top: 1.5rem;
-}
-
-#app{
-    font-family:'Montserrat';
-    text-align: center;
-    font-size: 56px;
-    
-}
-
-#disponivel{
-    text-align: center;
-    font-family: 'Montserrat';
-    font-size: 28px;
-    
-}
-
-.faixa{
-    background-color: #64deef;
-    width: 100%;
-    height: 280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 9.5rem;
-}
-
-#iphone{
-    width: 250px;
-    height: 515px;
-}
-
-#download{
-    width: 240px;
-    
-}
-
-#diagnostico{
-    font-family: 'Montserrat';
-    color: #ffffff;
-    font-size: 25px;
-    text-align: center;
-    margin-left: 0.5rem;
 }
 
 #rodape{
@@ -456,7 +412,7 @@ select {
         margin: 1.2rem 1rem;
     }
      
-    #subTitle-home-page, #iphone{
+    #subTitle-home-page{
         visibility: hidden;
         display: none;
     }
@@ -517,36 +473,6 @@ select {
         width: 8rem;
     }
 
-    #celular{
-        height: 400px;
-        
-    }
-
-    #app{
-        font-size: 30px;
-    }
-    
-    #disponivel{
-        font-size: 25px;
-    }
-
-    #diagnostico{
-        margin: 0;
-    }
-    
-    .faixa{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-    
-    #download{
-        width: 200px;
-        
-    }
-    
     #foot-nav {
         visibility: hidden;
         display: none;
