@@ -46,21 +46,15 @@ btnMenu.addEventListener("touchstart", handleButtonClick);
 function ocultarElemento() {
     const larguraTela = window.innerWidth;
     const subTitle = document.querySelector('#subTitle-home-page')
-    const search = document.querySelector('#search')
-    const iphone = document.querySelector('#iphone')
     const footer = document.querySelector('#foot-nav')
     
   
     if (subTitle && search && iphone && footer) { 
       if (larguraTela <= 768) {
         subTitle.style.display = 'none';
-        search.style.display = 'none'
-        iphone.style.display = 'none'
         footer.style.display = 'none'
       } else {
         subTitle.style.display = 'block';
-        search.style.display = 'block'
-        iphone.style.display = 'block'
         footer.style.display = 'block'
       }
     }
