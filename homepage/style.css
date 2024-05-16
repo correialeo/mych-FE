@@ -227,6 +227,49 @@ select {
     margin-top: 1.5rem;
 }
 
+#faq-area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+#faq-area h1{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 600;
+    color: #365274;
+    margin-top: 1rem;
+}
+
+.faq {
+    width: 65rem;
+    background-color: #e6e5e5;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    
+  }
+
+  .faq .question{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+  }
+  
+  .faq .answer {
+    display: none;
+    padding: 10px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    color: #9E9E9E;
+  }
+
 #rodape{
     font-family: 'Montserrat';
     font-size: 20px;
@@ -305,6 +348,7 @@ select {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 #btn-foot{
@@ -472,6 +516,19 @@ select {
     select {
         width: 8rem;
     }
+
+    #faq-area{
+        padding-bottom: 1.2rem;
+        margin: 0.8rem 0;
+    }
+
+    #faq-area h1{
+        font-size: 20px;
+    }
+
+    .faq {
+        width: 90%;      
+      }
 
     #foot-nav {
         visibility: hidden;
