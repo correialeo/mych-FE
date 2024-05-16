@@ -63,4 +63,14 @@ function ocultarElemento() {
 window.addEventListener('load', ocultarElemento);
 window.addEventListener('resize', ocultarElemento);
 
-
+var faqs = document.getElementsByClassName("faq");
+for (var i = 0; i < faqs.length; i++) {
+  faqs[i].addEventListener("click", function() {
+    var answer = this.children[1];
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}
