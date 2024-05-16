@@ -80,6 +80,7 @@ html ::-webkit-scrollbar {
     color: #fff;
     text-align: center;
     margin-top: 1.2em;
+    padding: 0.5rem;
 }
  
 #subTitle-home-page{
@@ -368,7 +369,7 @@ select {
     transition: 0.5s;
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 
     .menu{
         display: block;
@@ -515,6 +516,163 @@ select {
 
     select {
         width: 8rem;
+    }
+
+    #faq-area{
+        padding-bottom: 1.2rem;
+        margin: 0.8rem 0;
+    }
+
+    #faq-area h1{
+        font-size: 20px;
+    }
+
+    .faq {
+        width: 90%;      
+      }
+
+    #foot-nav {
+        visibility: hidden;
+        display: none;
+    }
+
+    #rodape{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px){
+
+    .menu{
+        display: block;
+        position: absolute;
+        top: 2.5rem;
+        left: 0;
+        background: #000;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a{
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.7rem solid rgb(0, 0, 0, 0.16);
+        border-radius: 0;
+    }
+
+    .btn-menu{
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburguer{
+        border-top: 0.16rem solid #fff;
+        width: 1.25rem;
+    }
+
+    .hamburguer::before,
+    .hamburguer::after{
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.139rem;
+        background-color: #fff;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .cab-nav.active .menu{
+        height: calc(100vh - 2.5rem);
+        visibility: visible;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cab-nav.active .hamburguer{
+        border-top-color: transparent;
+    }
+
+    .cab-nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    .cab-nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        
+        top: -0.46rem;
+    }
+
+    #home-page{
+        margin: 0;
+    }
+
+    #title-home-page h1{
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        margin: 1.2rem 1rem;
+    }
+     
+    #subTitle-home-page{
+        visibility: hidden;
+        display: none;
+    }
+
+    .btn-diagnostic p{
+        font-size: 20px;
+    }
+
+    #image-hp{
+        margin-top: 0.7rem;
+        width: 400px;
+    }
+
+    #title-workshop h1{
+        font-size: 24px;
+    }
+
+    #title-workshop p {
+        font-size: 14px;
+    }
+
+    
+    .card{
+        
+        width: 18rem;
+        height: 8.5rem;
+ 
+    }
+
+    #campo-pesquisa-oficinas {
+        order: 2;
+        padding: 0;
+        max-height: 340px;
+    }
+
+    iframe{
+        width: 18rem;
+        height: 21rem;
+    }
+
+
+    select {
+        width: 17rem;
     }
 
     #faq-area{
