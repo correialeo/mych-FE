@@ -7,15 +7,15 @@
 }
 
 body {
-    background-color: #131314;
+    background-color: #000000;
     font-family: 'Poppins';
+    margin-bottom: 100px; 
 }
 
-a:link{
+a:link {
     text-decoration: none;
     color: #9e9e9e;
 }
-
 
 #header {
     display: flex;
@@ -23,20 +23,22 @@ a:link{
     padding: 1em 2em;
 }
 
-#header p{
+#header p {
     color: #c9cccd;
 }
 
-#title{
+#conteudo {
+    padding-top: 4rem;
+}
+
+#title {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    
 }
 
 #title h1, h2 {
-
     color: #265374;
     font-size: 3em;
     line-height: 1.2;
@@ -45,23 +47,23 @@ a:link{
     margin: 0;
 }
 
-.diagnostic-span{
-    background-image: linear-gradient(90deg, #265374, #64deef);
+.diagnostic-span {
+    background-image: linear-gradient(90deg, #a3a3a3, #fff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-right: 7em;
 }
 
-.title-page-two {  
-    background-image: linear-gradient(90deg, #265374, #64deef);
+.title-page-two {
+    background-image: linear-gradient(200deg, #a3a3a3, #fff);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;  
+    -webkit-text-fill-color: transparent;
     margin-right: 11.7em;
 }
 
-#title h3{
+#title h3 {
     color: #444746;
     font-weight: 400;
     font-size: 1.8em;
@@ -70,7 +72,7 @@ a:link{
     margin-bottom: 2em;
 }
 
-.specialties{
+.specialties {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -78,96 +80,93 @@ a:link{
     gap: 1em;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
-    background-color: #1f1f20;
+    background-color: #0e0e0e;
     width: 200px;
     height: 200px;
     border-radius: 15px;
     align-items: center;
 }
 
-.card p{
+.card:hover{
+    background-color: #181818;
+    transition: 0.5s;
+}
+
+.card p {
     color: #9e9e9e;
     padding: 1em;
     font-weight: 400;
 }
 
 .icon {
-    
-        height: 2.5rem;
-        width: 2.5rem;
-        background-color: #131314;
-        border-radius: 50%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -moz-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -moz-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        margin: 1rem;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        margin-top: 4em;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #0e0e0e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    align-self: center;
+    margin-top: 4em;
 }
 
-.ico-img{
-    -webkit-user-select: none;
+.ico-img {
     user-select: none;
     background-repeat: no-repeat;
     display: inline-block;
     fill: currentColor;
     height: 21px;
     width: 29px;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
-#input{
+#input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    padding: 10px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-#input-area{
+#input-area {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-#input-field{
-    margin-top: 5em;
-    bottom: 0;
-    background-color: #1f1f20;
+#input-field {
+    background-color: #0e0e0e;
     border-radius: 32px;
     height: 5em;
-    width: 864px;
-    border: none; 
+    width: 854px;
+    border: none;
+    color: #fff;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
-#input-field::placeholder{
+#input-field::placeholder {
     color: #808080;
     font-size: 1.2em;
-    padding: 1.6em;
 }
 
-#input-warning{
-    display: flex;
-    justify-content: center;
+#input-warning {
     text-align: center;
+    margin-top: 10px;
 }
 
-#input-warning p{
-    color: #fff;
+#input-warning p {
+    color: #aaaaaa;
+    font-size: 12px;
 }
-
