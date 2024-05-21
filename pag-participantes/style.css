@@ -112,6 +112,12 @@ body{
     justify-content: center;
 }
 
+
+#links-git li{
+    display: inline-block;
+    margin-bottom: 10px;
+} 
+
 #links-git a{
     text-decoration: none;
     color: #fff;
@@ -119,3 +125,4 @@ body{
     gap: 10em;
     margin: 10px 7.4em;
 }
+
