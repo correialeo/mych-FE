@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+ 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+ 
 body{
     background-color: #131314;
 }
-
+ 
 #cabecalho {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #131314; 
+    background-color: #131314;
 }
-
+ 
 #navegacao li {
     display: inline-block;
     margin: 0 2em;
 }
-  
+ 
 #navegacao a {
     font-family: 'Poppins';
     font-size: 15px;
     font-weight: 400;
-    color: #ffffff; 
+    color: #ffffff;
     text-decoration: none;
 }
-
-#navegacao img { 
+ 
+#navegacao img {
     vertical-align: middle;}
-
+ 
 #title-pag {
     font-family: 'Poppins';
     font-size: 20px;
@@ -45,13 +45,14 @@ body{
     background-clip: text;
     -webkit-background-clip: text;    
 }
-
+ 
 #text-pag {
     text-align: center;
     color: #ffffff;
     font-family: 'Poppins';
+    margin-top: 10px;
 }
-
+ 
 #title-participantes{
     font-family: 'Poppins';
     text-align: center;
@@ -64,21 +65,21 @@ body{
     -webkit-background-clip: text;
     margin-top: 40px;
 }
-
+ 
 #turma{
     color: #444746;
     font-family: 'Poppins';
     text-align: center;
     font-size: 25px;
 }
-
+ 
 #pag-participantes{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-#participantes {
+ 
+#participantes{
     display: flex;
     color: #ffffff;
     font-family: 'Poppins';
@@ -86,43 +87,86 @@ body{
     font-size: 15px;
     gap: 120px;
     justify-content: center;
-    margin-top: 40px;       
-}
-
-#img-participantes{
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    gap: 8em; 
-    margin-top: 10px;
-}
-
-#img-participantes img{
+    margin-top: 40px;  
+    color: #fff;
+    gap: 8em;
+    
+}    
+ 
+#participantes img{
     width: 200px;
     height: 200px;
 }
-
-.link{
-    color: #fff;
-    gap: 10em;
-}
-
-#links-git{
-    display: flex;
-    justify-content: center;
-}
-
-
-#links-git li{
-    display: inline-block;
-    margin-bottom: 10px;
-} 
-
-#links-git a{
+ 
+#participantes a{
     text-decoration: none;
     color: #fff;
     font-family: 'Montserrat';
     gap: 10em;
-    margin: 10px 7.4em;
 }
 
+ul p{
+    margin-right: 120px;
+}
+ 
+@media (max-width: 767px){
+ 
+    #navegacao{
+        text-align: center;
+    }
+ 
+    #text-pag{
+        text-align: center;
+        margin: 10px;
+    }
+ 
+ 
+    #pag-participantes{
+        text-align: center;
+    }
+ 
+    #participantes{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+ 
+    #title-participantes{
+        margin: 10px;
+    }
+
+    ul p{
+        display: none;
+    }
+ 
+}
+ 
+@media (min-width: 768px) and (max-width:1024px) {
+ 
+    #navegacao{
+     
+    }
+ 
+    #text-pag{
+        text-align: center;
+        margin: 10px;
+    }
+ 
+    #pag-participantes{
+        text-align: center;
+    }
+ 
+    #participantes{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 15px;
+    }
+ 
+    #title-participantes{
+        margin-top: 30px;
+    }
+    ul p{
+        display: none;
+    }
+}
