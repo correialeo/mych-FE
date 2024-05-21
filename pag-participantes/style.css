@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #000;
+    background-color: #131314;
 }
 
 #cabecalho {
@@ -15,34 +15,20 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: black; 
+    background-color: #131314; 
 }
 
-#navegacao ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#navegacao ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
 #navegacao li {
     display: inline-block;
     margin: 0 2em;
-    margin-top: 10px;
 }
   
 #navegacao a {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff; 
     text-decoration: none;
-    color: #fff;
-    text-decoration: #000;
-    font-family: 'Ubuntu';
-    font-size: 13px;
-    align-items: center;   
 }
 
 #navegacao img { 
@@ -86,6 +72,12 @@ body{
     font-size: 25px;
 }
 
+#pag-participantes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #participantes {
     display: flex;
     color: #ffffff;
@@ -97,53 +89,40 @@ body{
     margin-top: 40px;       
 }
 
+#img-participantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 8em; 
+    margin-top: 10px;
+}
+
 #img-participantes img{
     width: 200px;
+    height: 200px;
 }
 
-#felipe{
+.link{
+    color: #fff;
+    gap: 10em;
+}
+
+#links-git{
+    display: flex;
     justify-content: center;
-    margin-left: 335px;
 }
 
-#leandro{
-    justify-content: center;
-    margin-left: 120px;
-}
-
-#maria{
-    justify-content: center;
-    margin-left: 125px; 
-}
-
- #link-1{   
-    color: #ffffff;
-    margin-left: 400px; 
-}
-
-#link-2{
-    color: #ffffff;
-    margin-left: 255px;
-}
-
-#link-3{  
-   color: #ffffff;
-   text-align: left;
-   margin-left: 250px;
-}
-
-#links-git ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#text-nav{
-    align-items: center;
-
-}
 
 #links-git li{
     display: inline-block;
     margin-bottom: 10px;
 } 
+
+#links-git a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat';
+    gap: 10em;
+    margin: 10px 7.4em;
+}
+
