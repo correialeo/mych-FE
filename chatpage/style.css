@@ -186,7 +186,8 @@ a:link {
 
     .card {
         flex: 1 1 100%;
-        margin-left: 88px ;
+        margin-left: 142px ;
+        
     }
 
     #title h1, h2 {
@@ -212,16 +213,16 @@ a:link {
       }
     }
 
+    #mike{
+        margin-left: 300px;
+    }
+
 
 @media (min-width: 768px) and (max-width: 990px) {
     .specialties {
         flex-direction: row;
         flex-wrap: wrap;
-    }
-
-    .card {
-        flex: 1 1 calc(50% - 1rem);
-    }
+    }   
 
     #title h1 {
         font-size: 1.75rem;
@@ -229,10 +230,12 @@ a:link {
 
     #title h2 {
         font-size: 1.5rem;
+        margin-right: 72px ;
     }
 
     #title h3 {
         font-size: 1rem;
+        margin-right: 19em;
     }
 
     #input {
