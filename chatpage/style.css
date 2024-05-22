@@ -170,3 +170,91 @@ a:link {
     color: #aaaaaa;
     font-size: 12px;
 }
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .specialties {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        margin-left: 142px ;
+        
+    }
+
+    #title h1, h2 {
+        font-size: 1.5rem;
+        margin-left: 65px;
+    }
+
+    #title h3 {
+        font-size: 0.9rem;
+        margin-left: 65px;
+    }
+
+    #input {
+        padding: 10px;
+      }
+    
+      #input-area {
+        padding: 0 10px;
+      }
+    
+      #input-warning {
+        padding: 0 10px;
+      }
+    }
+
+    #mike{
+        margin-left: 300px;
+    }
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .specialties {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }   
+
+    #title h1 {
+        font-size: 1.75rem;
+    }
+
+    #title h2 {
+        font-size: 1.5rem;
+        margin-right: 72px ;
+    }
+
+    #title h3 {
+        font-size: 1rem;
+        margin-right: 19em;
+    }
+
+    #input {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #input-field {
+        width: 100%;
+    }
+
+    #input-warning {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #input-area {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
